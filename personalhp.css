@@ -1,0 +1,192 @@
+/* personalhp.css */
+/* Personal Home Page Stylesheet */
+
+/* Reset default styles and set up basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff8f0;
+    color: #213baf;
+}
+
+.container, .container1 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+    border-radius: 8px; /* Moved border-radius to .container1 */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.container img {
+    width: 100%; /* Changed to 100% for responsiveness */
+    height: auto; /* Changed to auto for aspect ratio */
+    object-fit: cover; /* Ensures the image fits within the container */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures no overflow */
+}
+
+header {
+    background-color: #213baf;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+nav {
+    background-color: #788eee;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: #213baf;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    padding: 1.5rem 1rem;
+  }
+  form {
+    max-width: 100%;
+  }
+  button {
+    width: 100%;
+    max-width: none;
+    padding: 1rem;
+  }
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  nav.container {
+    gap: 1rem;
+  }
+  nav ul {
+    gap: 1.5rem;
+  }
+  section {
+    padding: 2rem 1.5rem;
+  }
+} 
+
+/* Responsive Styles */
+
+/* Small devices (phones, portrait) */
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  nav.container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+} 
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .header-image-container {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    max-width: none;
+    padding: 1rem;
+  }
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  nav.container {
+    gap: 1rem;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+
+  section {
+    padding: 2rem 1.5rem;
+  }
+}
+
